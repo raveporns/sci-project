@@ -1,0 +1,49 @@
+body{
+    background-color: aquamarine;
+    justify-items: center;
+}
+
+
+/* styles.css */
+
+/* ปรับขนาดของ card */
+.card {
+    width: 60%; /* ปรับความกว้างตามที่คุณต้องการ */
+    margin: 20px auto; /* จัดตำแหน่งให้อยู่ตรงกลางแนวนอนและมีระยะห่างด้านบน-ล่าง */
+    border: 1px solid #ccc; /* ขอบของกล่อง */
+    border-radius: 8px; /* ปรับมุมของกล่องให้โค้งมน */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับกล่อง */
+}
+
+/* ปรับการแสดงผลของ card-header */
+.card-header {
+    background-color: #f8f9fa; /* สีพื้นหลังของ header */
+    padding: 10px; /* ระยะห่างภายใน */
+    font-size: 1.25em; /* ขนาดตัวอักษร */
+    font-weight: bold; /* น้ำหนักตัวอักษร */
+    border-bottom: 1px solid #ccc; /* ขอบด้านล่าง */
+}
+
+/* ปรับการแสดงผลของ card-body */
+.card-body {
+    padding: 15px; /* ระยะห่างภายใน */
+}
+
+/* ปรับการแสดงผลของ blockquote */
+blockquote {
+    margin: 0; /* ยกเลิกระยะห่างรอบนอก */
+    font-size: 1em; /* ขนาดตัวอักษร */
+    color: #333; /* สีตัวอักษร */
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+}
+
+/* ปรับการแสดงผลของข้อความใน blockquote */
+blockquote p {
+    margin: 0; /* ยกเลิกระยะห่างรอบนอก */
+}
+
+.form-control{
+    width: 45%; /* ปรับความกว้างตามที่คุณต้องการ */
+    margin: 20px auto; /* จัดตำแหน่งให้อยู่ตรงกลางแนวนอนและมีระยะห่างด้านบน-ล่าง */
+}
+

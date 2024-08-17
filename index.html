@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <div class="col-sm"><button type="button" class="btn btn-outline-secondary" id="btn-4">Home</button></div>
+        <div>
+            <div class="card">
+                <div class="card-header">
+                    NPC
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <p id="msg-1">สวัสดีคุณมีอะไรให้ผมช่วยหรือไม่ ?</p>
+                    </blockquote>
+                </div>
+            </div>
+            <div class="container text-center">
+
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="information.html" class="btn btn-primary">ฉันต้องการสอบถามข้อมูลคุณ</a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="encode-decode.html" class="btn btn-primary">ฉันต้องการให้คุณสอนเกี่ยวกับการถอดรหัส</a>
+                    </div>
+                    <div class="col-sm">
+                        <a href="checkPassword.html" class="btn btn-primary">ฉันต้องการให้คุณช่วยตรวจสอบรหัสที่ถอดมาได้</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- <script src="information.js"></script>
+    <script src="checkPassword.js"></script> -->
+    <script>
+        document.getElementById('btn-4').addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+
+</html>
