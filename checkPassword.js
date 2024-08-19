@@ -2,6 +2,7 @@ function check() {
     let passwordInput = document.getElementById('password');
     let password = passwordInput.value;
     let modalBody = document.querySelector('.modal-body');
+    let modalTitle = document.querySelector('.modal-title');
 
     if (password === "universe") {
         modalBody.innerHTML = "ขอแสดงยินดีด้วยรหัสของคุณถูกต้อง🎉 ถ้าหากหาโค้ดลับครบทั้ง 4 ฐานแล้วลองนำมารวมกันเพื่อปลดรหัสลับขั้นสุดท้ายแลกของรางวัลสุดพิเศษ";
@@ -9,7 +10,6 @@ function check() {
         modalBody.innerHTML = "ขอแสดงความเสียใจด้วยรหัสของคุณไม่ถูกต้อง กรุณาลองใหม่!";
     }
 
-    let modalTitle = document.querySelector('.modal-title');
     modalTitle.innerHTML = "ผลการตรวจสอบ";
 
     const myModal = new bootstrap.Modal(document.getElementById('checkPassword'));
@@ -17,11 +17,13 @@ function check() {
 
     passwordInput.value = '';
 
-    document.getElementById('checkPassword').addEventListener('keydown', function(event) {
-        if (event.key === 'Enter') {
-            event.preventDefault(); 
-            myModal.hide(); 
-        }
+    document.getElementById('checkPassword').addEventListener('shown.bs.modal', function() {
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); 
+                myModal.hide(); 
+            }
+        }, { once: true }); 
     });
 }
 
