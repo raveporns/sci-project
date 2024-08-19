@@ -20,7 +20,6 @@ function check() {
     document.getElementById('checkPassword').addEventListener('shown.bs.modal', function() {
         document.addEventListener('keydown', function(event) {
             if (event.key === 'Enter') {
-                event.preventDefault(); 
                 myModal.hide(); 
             }
         }, { once: true }); 
@@ -29,7 +28,6 @@ function check() {
 
 document.getElementById('password').addEventListener('keydown', function(event) {
     if (event.key === 'Enter') {
-        event.preventDefault(); 
         check(); 
     }
 });
