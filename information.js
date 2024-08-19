@@ -1,20 +1,23 @@
-// ตัวนับการคลิก
 let clickCount = 1;
 
 function handleButtonClick() {
-    clickCount++; // เพิ่มค่าตัวนับทุกครั้งที่คลิก
+    clickCount++; 
 
     if (clickCount === 1) {
         information()
     } else if (clickCount === 2) {
         doubt();
-    }else if (clickCount === 3){
+    } else if (clickCount === 3) {
         talk()
-    }else if(clickCount === 4){
+    } else if (clickCount === 4) {
         givecode()
-    }else if (clickCount === 5){
+    } else if (clickCount === 5) {
         goodluck()
-        removeButton('btn-1');
+        let button1 = document.getElementById("btn-1");
+        button1.innerHTML = "กลับสู่หน้าหลัก";
+        button1.addEventListener('click', function () {
+            window.location.href = 'index.html';
+        });
         removeButton('btn-2');
         removeButton('btn-3');
     }
@@ -61,12 +64,12 @@ function talk() {
 
     let button3 = document.getElementById("btn-3");
     button3.innerHTML = "เขาลักษณะยังไง สูงไหม";
-} 
+}
 
 
 function givecode() {
     let msg = document.getElementById("msg-1")
-    msg.innerHTML = "เขาให้สิ่งนี้กับผมมา [Wkh Xqlyhuh] "
+    msg.innerHTML = "เขาให้สิ่งนี้กับผมมา [xqlyhuh] "
 
     let button1 = document.getElementById("btn-1");
     button1.innerHTML = "มันคืออะไร";
@@ -76,7 +79,7 @@ function givecode() {
 
     let button3 = document.getElementById("btn-3");
     button3.innerHTML = "สิ่งที่คุณได้มามันไม่ผิดแน่ใช่ไหม";
-} 
+}
 
 function goodluck() {
     let msg = document.getElementById("msg-1")
@@ -91,26 +94,11 @@ function goodluck() {
     let button3 = document.getElementById("btn-3");
     button3.innerHTML = "สิ่งที่คุณได้มามันไม่ผิดแน่ใช่ไหม";
 
-} 
+}
 
 function removeButton(buttonId) {
     let button = document.getElementById(buttonId);
     if (button) {
         button.remove();
     }
-}
-
-
-function checkPassword() {
-    let msg = document.getElementById("msg-1")
-    msg.innerHTML = "ผมจะตรวจสอบรหัสให้คุณ"
-
-    let button1 = document.getElementById("btn-1");
-    button1.innerHTML = "เขามีท่ายังไง ?";
-
-    let button2 = document.getElementById("btn-2");
-    button2.innerHTML = "เขาได้พูดอะไรแปลก ๆ หรือไม่ ?";
-
-    let button3 = document.getElementById("btn-3");
-    button3.innerHTML = "คุณได้พูดคุยกับเขาหรือไม่ ?";
 }

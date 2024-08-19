@@ -1,49 +1,110 @@
 body{
-    background-color: aquamarine;
-    justify-items: center;
+    /* background-color: aquamarine;
+    justify-items: center; */
+    background-image:url('bg.png');
+    background-repeat: no-repeat;
 }
 
-
-/* styles.css */
-
-/* ปรับขนาดของ card */
 .card {
-    width: 60%; /* ปรับความกว้างตามที่คุณต้องการ */
-    margin: 20px auto; /* จัดตำแหน่งให้อยู่ตรงกลางแนวนอนและมีระยะห่างด้านบน-ล่าง */
-    border: 1px solid #ccc; /* ขอบของกล่อง */
-    border-radius: 8px; /* ปรับมุมของกล่องให้โค้งมน */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาให้กับกล่อง */
+    display: flex;              
+    flex-direction: column;     
+    width: 65%;                 
+    height: 50%;
+    margin: 20px auto 20px auto; 
+    border: 2px solid #ccc;    
+    border-radius: 8px;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-left: 30%;          
+    margin-top: 15%;
+    background-color: #ffdfb6;
 }
 
-/* ปรับการแสดงผลของ card-header */
 .card-header {
-    background-color: #f8f9fa; /* สีพื้นหลังของ header */
-    padding: 10px; /* ระยะห่างภายใน */
-    font-size: 1.25em; /* ขนาดตัวอักษร */
-    font-weight: bold; /* น้ำหนักตัวอักษร */
-    border-bottom: 1px solid #ccc; /* ขอบด้านล่าง */
+    background-color: #51350e; 
+    color: #fff;
+    padding: 10px; 
+    font-size: 1.25em; 
+    font-weight: bold; 
+    border-bottom: 1px solid #ccc; 
 }
 
-/* ปรับการแสดงผลของ card-body */
 .card-body {
-    padding: 15px; /* ระยะห่างภายใน */
+    padding: 15px; 
 }
 
-/* ปรับการแสดงผลของ blockquote */
 blockquote {
-    margin: 0; /* ยกเลิกระยะห่างรอบนอก */
-    font-size: 1em; /* ขนาดตัวอักษร */
-    color: #333; /* สีตัวอักษร */
-    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    margin: 0; 
+    font-size: 1em; 
+    color: #333; 
+    line-height: 1.5; 
 }
 
-/* ปรับการแสดงผลของข้อความใน blockquote */
 blockquote p {
-    margin: 0; /* ยกเลิกระยะห่างรอบนอก */
+    margin: 0; 
 }
 
 .form-control{
-    width: 45%; /* ปรับความกว้างตามที่คุณต้องการ */
-    margin: 20px auto; /* จัดตำแหน่งให้อยู่ตรงกลางแนวนอนและมีระยะห่างด้านบน-ล่าง */
+    width: 45%; 
+    margin: 20px auto; 
 }
 
+.group-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; 
+    margin-left: 30%; 
+   
+}
+
+.group-btn .btn {
+    width: 93%; 
+    text-align: center; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    opacity: 90%;
+    background-color: #fcf3e8;
+}
+
+.card-check{
+    width: 93%; 
+    text-align: center; 
+    padding: 15px; 
+    margin-bottom: 10px; 
+    opacity: 90%;
+    background-color: #fcf3e8;
+}
+
+.card-check {
+    display: flex;             
+    flex-direction: column;     
+    width: 65%;                 
+    height: 50%;
+    margin: 20px auto 20px auto; 
+    border: 2px solid #ccc;     
+    border-radius: 8px;         
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-left: 30%;         
+    background-color: #ffdfb6;
+}
+
+.code {
+    justify-items: center;
+    align-items: center;
+    position: relative;
+}
+
+.scal{
+    margin-top: -200px;
+ }
+
+ a.nav-link{
+    color: #fff;
+ }
+
+ .logo{
+    display: flex;
+    justify-content: flex-end;
+    color: #fff;
+    margin-right: 15px;
+    margin-top: 15px;
+ }

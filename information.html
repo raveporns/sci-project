@@ -7,12 +7,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Information</title>
 </head>
 
 <body>
     <div>
-        <div class="col-sm"><button type="button" class="btn btn-outline-secondary" id="btn-4">Home</button></div>
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" id="btn-4" width="40" height="40" fill="currentColor"
+                class="bi bi-house-door-fill" viewBox="0 0 16 16" >
+                <path
+                    d="M6.5 14.5v-3.505c0-.245.25-.495.5-.495h2c.25 0 .5.25.5.5v3.5a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4a.5.5 0 0 0 .5-.5" />
+            </svg>
+        </div>
         <div>
             <div class="card">
                 <div class="card-header">
@@ -24,34 +30,33 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="container text-center">
 
-                <div class="row">
-                    <div class="col-sm">
-                        <button type="button" class="btn btn-primary" id="btn-1"
-                            onclick="handleButtonClick()">คุณได้เจอคนน่าสงสัยหรือไม่ ?</button>
-                    </div>
-                    <div class="col-sm">
-                        <button type="button" class="btn btn-primary" id="btn-2"
-                            onclick="handleButtonClick()">คุณเห็นคนท่าทางแปลก ๆ หรือไม่ ?</button>
-                    </div>
-                    <div class="col-sm">
-                        <button type="button" class="btn btn-primary" id="btn-3"
-                            onclick="handleButtonClick()">คุณได้พูดคุยกับเขาหรือไม่ ?</button>
-                    </div>
+
+            <div class="group-btn">
+                <div class="col-sm">
+                    <button type="button" class="btn btn-light" id="btn-1"
+                        onclick="handleButtonClick()">คุณได้เจอคนน่าสงสัยหรือไม่ ?</button>
                 </div>
-
+                <div class="col-sm">
+                    <button type="button" class="btn btn-light" id="btn-2"
+                        onclick="handleButtonClick()">คุณเห็นคนท่าทางแปลก ๆ หรือไม่ ?</button>
+                </div>
+                <div class="col-sm">
+                    <button type="button" class="btn btn-light" id="btn-3"
+                        onclick="handleButtonClick()">คุณได้พูดคุยกับเขาหรือไม่ ?</button>
+                </div>
             </div>
+
 
         </div>
     </div>
     <script src="information.js"></script>
-    <!-- <script src="checkPassword.js"></script> -->
     <script>
         document.getElementById('btn-4').addEventListener('click', function () {
             window.location.href = 'index.html';
         });
     </script>
+    
 </body>
 
 </html>
