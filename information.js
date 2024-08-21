@@ -69,16 +69,16 @@ function talk() {
 
 function givecode() {
     let msg = document.getElementById("msg-1")
-    msg.innerHTML = "เขาให้สิ่งนี้กับผมมา [xqlyhuh] "
+    msg.innerHTML = "เขาให้สิ่งนี้กับผมมา<strong> [fmrveihv]</strong> "
 
     let button1 = document.getElementById("btn-1");
-    button1.innerHTML = "มันคืออะไร";
+    button1.innerHTML = "มันคืออะไร ?";
 
     let button2 = document.getElementById("btn-2");
-    button2.innerHTML = "มันมีความหมายยังไง";
+    button2.innerHTML = "มันมีความหมายยังไง ?";
 
     let button3 = document.getElementById("btn-3");
-    button3.innerHTML = "สิ่งที่คุณได้มามันไม่ผิดแน่ใช่ไหม";
+    button3.innerHTML = "สิ่งที่คุณได้มามันไม่ผิดแน่ใช่ไหม ?";
 }
 
 function goodluck() {

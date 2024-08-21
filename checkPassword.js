@@ -1,3 +1,4 @@
+// ฟังก์ชันตรวจสอบรหัส
 function check() {
     let passwordInput = document.getElementById('password');
     let password = passwordInput.value;
@@ -17,17 +18,27 @@ function check() {
 
     passwordInput.value = '';
 
-    document.getElementById('checkPassword').addEventListener('shown.bs.modal', function() {
-        document.addEventListener('keydown', function(event) {
+    document.getElementById('checkPassword').addEventListener('shown.bs.modal', function () {
+        document.addEventListener('keydown', function (event) {
             if (event.key === 'Enter') {
-                myModal.hide(); 
+                myModal.hide();
             }
-        }, { once: true }); 
+        }, { once: true });
     });
 }
 
-document.getElementById('password').addEventListener('keydown', function(event) {
+document.getElementById('checkPassword').addEventListener('hidden.bs.modal', function () {
+    location.reload();
+});
+
+document.getElementById('check-btn').addEventListener('click', function () {
+    check();
+});
+
+document.getElementById('password').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
-        check(); 
+        check();
     }
 });
+
+
