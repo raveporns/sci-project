@@ -4,7 +4,7 @@ function caesar(){
 
     let msg2 = document.getElementById("msg-2")
     msg2.innerHTML = "เป็นการเข้ารหัสที่เปลี่ยนตัวอักษรในข้อความโดยการเลื่อนตำแหน่งตามจำนวนที่กำหนด "
-                    + " <br> ตัวอย่าง : เลื่อนตัวอักษรคำว่า silpakorn ไป 3 ตำแหน่งจะได้เป็น kurmncsolp"
+                    + " <br> ตัวอย่าง : เลื่อนตัวอักษรคำว่า silpakorn ไป 3 ตำแหน่งจะได้เป็น vlosdnruq "
 }
 
 function atbash(){
