@@ -1,7 +1,7 @@
 let clickCount = 1;
 
 function handleButtonClick() {
-    clickCount++; 
+    clickCount++;
 
     if (clickCount === 1) {
         information()
@@ -57,19 +57,19 @@ function talk() {
     msg.innerHTML = "ผมไม่ได้พูดอะไรกับเขาแต่เขาให้สิ่งนี้กับผมมา"
 
     let button1 = document.getElementById("btn-1");
-    button1.innerHTML = "เขาให้อะไรคุณมาหรอ";
+    button1.innerHTML = "เขาให้อะไรคุณมาหรอ ?";
 
     let button2 = document.getElementById("btn-2");
-    button2.innerHTML = "ขอดูหน่อยได้ไหม";
+    button2.innerHTML = "ขอดูหน่อยได้ไหม ?";
 
     let button3 = document.getElementById("btn-3");
-    button3.innerHTML = "เขาลักษณะยังไง สูงไหม";
+    button3.innerHTML = "เขาลักษณะยังไง สูงไหม ?";
 }
 
 
 function givecode() {
     let msg = document.getElementById("msg-1")
-    msg.innerHTML = "เขาให้สิ่งนี้กับผมมา<strong> [fmrveihv]</strong> "
+    msg.innerHTML = "เขาให้สิ่งนี้กับผมมา<strong> [fmrevihv]</strong> "
 
     let button1 = document.getElementById("btn-1");
     button1.innerHTML = "มันคืออะไร ?";
@@ -83,16 +83,16 @@ function givecode() {
 
 function goodluck() {
     let msg = document.getElementById("msg-1")
-    msg.innerHTML = "ผมก็ไม่รู้ว่ามันคืออะไร อาจจะเป็นรหัสลับที่คุณต้องแก้ คุณลองมองไปรอบ ๆ ตัวคุณอาจจะช่วยได้ คุณสามารถนำรหัสลับที่คุณแก้ได้มาให้ผมช่วยตรวจสอบได้ในภายหลัง ผมต้องไปแล้ว ขอให้คุณโชคดี "
+    msg.innerHTML = "ผมก็ไม่รู้ว่ามันคืออะไร ? อาจจะเป็นรหัสลับที่คุณต้องแก้ คุณลองมองไปรอบ ๆ ตัวคุณอาจจะช่วยได้ คุณสามารถนำรหัสลับที่คุณแก้ได้มาให้ผมช่วยตรวจสอบได้ในภายหลัง ผมต้องไปแล้ว ขอให้คุณโชคดี "
 
     let button1 = document.getElementById("btn-1");
-    button1.innerHTML = "มันคืออะไร";
+    button1.innerHTML = "มันคืออะไร ?";
 
     let button2 = document.getElementById("btn-2");
-    button2.innerHTML = "มันมีความหมายยังไง";
+    button2.innerHTML = "มันมีความหมายยังไง ?";
 
     let button3 = document.getElementById("btn-3");
-    button3.innerHTML = "สิ่งที่คุณได้มามันไม่ผิดแน่ใช่ไหม";
+    button3.innerHTML = "สิ่งที่คุณได้มามันไม่ผิดแน่ใช่ไหม ?";
 
 }
 
